@@ -11,11 +11,11 @@ $(call inherit-product, device/oppo/OP46B1/device.mk)
 # Release name
 PRODUCT_RELEASE_NAME := Reno
 
-PRODUCT_COPY_FILES += $(call find-copy-subdir-files,*,$(LOCAL_PATH)/recovery/root,recovery/root)
+PRODUCT_COPY_FILES   += $(call find-copy-subdir-files,*,$(LOCAL_PATH)/recovery/root,recovery/root)
 
 # Device identifier
-PRODUCT_DEVICE := OP46B1
-PRODUCT_NAME := twrp_OP46B1
-PRODUCT_BRAND := OPPO
-PRODUCT_MODEL := Reno
+PRODUCT_DEVICE       := OP46B1
+PRODUCT_NAME         := twrp_OP46B1
+PRODUCT_BRAND        := OPPO
+PRODUCT_MODEL        := Reno
 PRODUCT_MANUFACTURER := OPPO
