@@ -1,3 +1,9 @@
+#
+# Copyright (C) 2025 The Android Open Source Project
+#
+# SPDX-License-Identifier: Apache-2.0
+#
+
 PRODUCT_SHIPPING_API_LEVEL := 28
 
 # Additional binaries & libraries needed for recovery

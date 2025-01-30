@@ -1,3 +1,9 @@
+#
+# Copyright (C) 2025 The Android Open Source Project
+#
+# SPDX-License-Identifier: Apache-2.0
+#
+
 # Device
 DEVICE_PATH := device/oppo/OP46B1
 

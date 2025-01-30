@@ -1,3 +1,9 @@
+#
+# Copyright (C) 2025 The Android Open Source Project
+#
+# SPDX-License-Identifier: Apache-2.0
+#
+
 # Inherit from common AOSP config
 $(call inherit-product, $(SRC_TARGET_DIR)/product/base.mk)
 $(call inherit-product, $(SRC_TARGET_DIR)/product/core_64_bit_only.mk)
