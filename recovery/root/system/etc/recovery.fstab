@@ -26,7 +26,7 @@
 # IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 
 #device                                    mount point     fstype  [device2] [length=]
-/dev/block/bootdevice/by-name/system       /               ext4                                                                                               wait,avb=vbmeta_system,first_stage_mount
+/dev/block/bootdevice/by-name/system       /               ext4                                                                                               wait,avb,first_stage_mount
 /dev/block/bootdevice/by-name/vendor       /vendor         ext4                                                                                               wait,avb,first_stage_mount
 /dev/block/bootdevice/by-name/cache        /cache          ext4    noatime,nosuid,nodev,barrier=1,data=ordered                                                wait,check
 /dev/block/bootdevice/by-name/userdata     /data           ext4    noatime,nosuid,noatime,nodev,barrier=1,noauto_da_alloc,discard,lazytime,errors=panic       latemount,wait,check,fileencryption=ice,quota,reservedsize=128M
