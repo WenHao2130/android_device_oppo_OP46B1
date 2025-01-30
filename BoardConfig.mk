@@ -120,12 +120,13 @@ BOARD_VNDK_VERSION := current
 # TWRP Configurations
 TW_DEFAULT_LANGUAGE := en
 TW_EXTRA_LANGUAGES := true
-TW_THEME := portrait_hdpi
+TW_HAS_EDL_MODE := true
 TW_INCLUDE_CRYPTO := true
 TW_INCLUDE_CRYPTO_FBE := true
 TW_INCLUDE_FBE := true
 TW_NO_SCREEN_BLANK := true
 TW_NO_SCREEN_TIMEOUT := true
+TW_THEME := portrait_hdpi
 
 # Verified Boot
 BOARD_AVB_ENABLE := true
