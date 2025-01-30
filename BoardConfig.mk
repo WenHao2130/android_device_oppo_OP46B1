@@ -127,6 +127,7 @@ TW_INCLUDE_FBE := true
 TW_NO_SCREEN_BLANK := true
 TW_NO_SCREEN_TIMEOUT := true
 TW_THEME := portrait_hdpi
+TARGET_USES_MKE2FS := true
 
 # Verified Boot
 BOARD_AVB_ENABLE := true
