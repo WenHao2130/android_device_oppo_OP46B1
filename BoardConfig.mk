@@ -131,6 +131,7 @@ TW_INCLUDE_FBE := true
 TW_NO_SCREEN_BLANK := true
 TW_NO_SCREEN_TIMEOUT := true
 TW_THEME := portrait_hdpi
+TARGET_RECOVERY_QCOM_RTC_FIX := true
 TARGET_USES_MKE2FS := true
 
 # Verified Boot
