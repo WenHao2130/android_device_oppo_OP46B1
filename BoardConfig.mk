@@ -53,11 +53,7 @@ BOARD_KERNEL_CMDLINE := \
 	service_locator.enable=1 \
 	androidboot.configfs=true \
 	androidboot.usbcontroller=a600000.dwc3 \
-	swiotlb=1 \
-	loop.max_part=7 \
-	printk.devkmsg=on \
-	kpti=off \
-	buildvariant=eng
+	loop.max_part=7
 BOARD_KERNEL_PAGESIZE := 4096
 BOARD_MKBOOTIMG_ARGS += --header_version $(BOARD_BOOTIMG_HEADER_VERSION)
 BOARD_KERNEL_IMAGE_NAME := Image.gz-dtb
@@ -65,11 +61,11 @@ TARGET_KERNEL_CONFIG := sdm670-perf_defconfig
 TARGET_KERNEL_SOURCE := kernel/oppo/OP46B1
 
 # Kernel - prebuilt
+BOARD_INCLUDE_RECOVERY_DTBO := true
+BOARD_PREBUILT_RECOVERY_DTBOIMAGE := $(DEVICE_PATH)/prebuilt/recovery_dtbo
 TARGET_FORCE_PREBUILT_KERNEL := true
 ifeq ($(TARGET_FORCE_PREBUILT_KERNEL),true)
-BOARD_INCLUDE_RECOVERY_DTBO := true
 TARGET_PREBUILT_KERNEL := $(DEVICE_PATH)/prebuilt/Image.gz-dtb
-BOARD_PREBUILT_RECOVERY_DTBOIMAGE := $(DEVICE_PATH)/prebuilt/recovery_dtbo
 endif
 
 # Partitions
@@ -120,8 +116,6 @@ BOARD_VNDK_VERSION := current
 # TWRP Configurations
 TW_DEFAULT_LANGUAGE := en
 TW_EXTRA_LANGUAGES := true
-TW_EXTERNAL_STORAGE_PATH := /external_sd
-TW_EXTERNAL_STORAGE_MOUNT_POINT := external_sd
 TW_HAS_EDL_MODE := true
 TW_INCLUDE_CRYPTO := true
 TW_INCLUDE_CRYPTO_FBE := true
@@ -133,6 +127,7 @@ TW_NO_SCREEN_TIMEOUT := true
 TW_THEME := portrait_hdpi
 TARGET_RECOVERY_QCOM_RTC_FIX := true
 TARGET_USES_MKE2FS := true
+BOARD_SUPPRESS_SECURE_ERASE := true
 
 # Verified Boot
 BOARD_AVB_ENABLE := true
